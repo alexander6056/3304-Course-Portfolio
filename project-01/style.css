@@ -121,17 +121,17 @@ gap: 20px;
 }
 
 .card {
-background-color: var(--card-color);
-width: 250px;
-padding: 25px;
-border: 1px solid var(--border-color);
-border-radius: 8px;
-transition: 0.3s;
+    background-color: var(--card-color);
+    width: 250px;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
-.card {
-border-color: var(--orange);
-transform: translateY(-5px);
+.card:hover {
+    transform: scale(1.08);
+    border-color: var(--orange);
 }
 
 .card h3 {
