@@ -21,6 +21,21 @@ body {
     color: var(--text-color);
     text-align: center;
 }
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+h1 {
+    letter-spacing: 1px;
+}
+h2 {
+    letter-spacing: 0.5px;
+}
+p,
+a {
+    font-family: Arial, sans-serif;
+}
 header {
 background-color: var(--section-color);
 padding: 25px;
