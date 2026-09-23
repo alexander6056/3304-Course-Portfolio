@@ -1,4 +1,4 @@
-:root{
+:root {
 --background: #1c1d1f;
 --section-color: #25272a;
 --card-color: #303236;
@@ -17,13 +17,12 @@
 --medium-spacing: 20px;
 --large-spacing: 60px;
 }
-*{
+* {
 box-sizing: border-box;
 }
 html {
 scroll-behavior: smooth;
 }
-
 body {
 margin: 0;
 font-family: var(--body-font);
@@ -31,71 +30,58 @@ background-color: var(--background);
 color: var(--text-color);
 text-align: center;
 }
-
 h1,
 h2,
 h3 {
 font-family: var(--heading-font);
 }
-
 h1 {
 letter-spacing: 1px;
 }
-
 h2 {
 letter-spacing: 0.5px;
 }
-
 p,
 a {
 font-family: var(--body-font);
 }
-
 header {
 background-color: var(--section-color);
 padding: 25px;
 border-bottom: 1px solid var(--border-color);
 }
-
 header h1 {
 margin-top: 0;
 margin-bottom: var(--medium-spacing);
 }
-
 nav {
 display: flex;
 justify-content: center;
 gap: 30px;
 }
-
 nav a {
 color: var(--text-color);
 text-decoration: none;
 padding: var(--small-spacing);
 transition: 0.3s;
 }
-
 nav a {
 color: var(--orange);
 transform: translateY(-2px);
 }
-
 .intro {
 padding: 100px var(--medium-spacing);
 }
-
 .intro h2 {
 font-size: var(--heading-font-size);
 margin-bottom: 15px;
 }
-
 .intro p {
 color: var(--second-text);
 font-size: var(--medium-font);
 max-width: 700px;
 margin: auto;
 }
-
 .button {
 display: inline-block;
 background-color: var(--orange);
@@ -106,32 +92,26 @@ border-radius: 5px;
 text-decoration: none;
 transition: 0.3s;
 }
-
 .button {
 background-color: var(--blue);
 color: white;
 transform: scale(1.05);
 }
-
 section {
 padding: var(--large-spacing) var(--medium-spacing);
 }
-
 section h2 {
 font-size: var(--large-font);
 margin-bottom: 25px;
 }
-
 #about {
 background-color: var(--section-color);
 }
-
 #about p {
 max-width: 700px;
 margin: var(--medium-spacing) auto;
 color: var(--second-text);
 }
-
 .about-image {
 width: 500px;
 max-width: 90%;
@@ -141,26 +121,22 @@ border-radius: 8px;
 border: 1px solid var(--border-color);
 transition: 0.3s;
 }
-
 .about-image {
 transform: scale(1.03);
 border-color: var(--orange);
 }
-
 .skills {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
 gap: var(--medium-spacing);
 }
-
 .projects {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
 gap: var(--medium-spacing);
 }
-
 .card {
 background-color: var(--card-color);
 width: 250px;
@@ -169,110 +145,97 @@ border: 1px solid var(--border-color);
 border-radius: 8px;
 transition: 0.3s;
 }
-
 .card {
 transform: scale(1.08) translateY(-5px);
 border-color: var(--orange);
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 }
-
 .card h3 {
 color: var(--orange);
 }
-
 .card p {
 color: var(--second-text);
 font-size: var(--small-font);
 }
-
 .card a {
+display: inline-block;
 color: var(--blue);
 text-decoration: none;
 transition: 0.3s;
 }
-
 .card a {
 color: var(--orange);
+transform: scale(1.05);
 }
-
 .project-card img {
 width: 100%;
 height: 150px;
 object-fit: cover;
 border-radius: 5px;
 margin-bottom: 15px;
+transition: 0.3s;
 }
-
+.project-card img {
+transform: scale(1.03);
+}
 #projects {
 background-color: var(--section-color);
 }
-
 #contact p {
 color: var(--second-text);
 }
-
 #contact a {
+display: inline-block;
 color: var(--blue);
 text-decoration: none;
 transition: 0.3s;
 }
-
 #contact a {
 color: var(--orange);
+transform: scale(1.05);
 }
-
 footer {
 background-color: var(--section-color);
 padding: 25px;
 border-top: 1px solid var(--border-color);
 }
-
 footer p {
 color: var(--second-text);
 }
-
 footer a {
+display: inline-block;
 color: var(--blue);
 text-decoration: none;
 transition: 0.3s;
 }
-
 footer a {
 color: var(--orange);
+transform: scale(1.05);
 }
-
 @media (max-width: 700px) {
-
 nav {
     flex-direction: column;
     gap: var(--small-spacing);
 }
-
 .intro {
     padding: 70px var(--medium-spacing);
 }
-
 .intro h2 {
     font-size: var(--large-font);
 }
-
 .skills {
     flex-direction: column;
     align-items: center;
 }
-
 .projects {
     flex-direction: column;
     align-items: center;
 }
-
 .card {
     width: 90%;
 }
-
 .about-image {
     width: 90%;
     height: 220px;
 }
-
 }
